@@ -3,7 +3,7 @@
 1) Небходимо установить Node.js и .NET SDK, если не установлено.
 2) Перейти в папку Vesta.Fullstack.Server
 3) Открыть файл appsettings.json и заполнить пропуски для подключения к бд "Host=;Port=;Database=;Username=;Password="
-4) Далее нужно импортировать миграцию из Vesta.Fullstack.Infrastructure или создать таблицу самостоятельно.
+4) Далее нужно импортировать миграцию, перейдите в Vesta.Fullstack, откройте терминал и введите комманду dotnet ef database update --project Vesta.Fullstack.Infrastructure --startup-project Vesta.Fullstack.Server.
 5) Открыть консоль и ввести комманду dotnet run
 6) Перейти по адресу https://localhost:50515/
 ## Готово
