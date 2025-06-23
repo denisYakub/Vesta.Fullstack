@@ -44,7 +44,7 @@ namespace Vesta.Fullstack.Domain.Entities
             RecipientCity = recipientCity;
             RecipientAddress = recipientAddress;
             CargoWeightKilograms = cargoWeightKilograms;
-            CargoCollectionDate = cargoCollectionDate;
+            CargoCollectionDate = cargoCollectionDate.ToUniversalTime();
         }
 
         public Order(

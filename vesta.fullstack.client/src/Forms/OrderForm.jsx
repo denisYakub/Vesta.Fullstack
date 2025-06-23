@@ -64,7 +64,7 @@ export default function OrderForm() {
 
     return (
         <form onSubmit={handleSubmit}>
-            <h2>Создание заказа</h2>
+            <h2>Order Create</h2>
 
             <input name="senderCity" placeholder="Sender's city" value={form.senderCity} onChange={handleChange} required />
             <input name="senderAddress" placeholder="Sender's address" value={form.senderAddress} onChange={handleChange} required />

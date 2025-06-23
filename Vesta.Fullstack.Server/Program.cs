@@ -1,4 +1,5 @@
 using Microsoft.EntityFrameworkCore;
+using Vesta.Fullstack.Application.Services;
 using Vesta.Fullstack.Domain.Contracts;
 using Vesta.Fullstack.Infrastructure.DbContexts;
 using Vesta.Fullstack.Infrastructure.Repositories;
@@ -7,6 +8,7 @@ var builder = WebApplication.CreateBuilder(args);
 
 builder.Services
     .AddScoped<IStorage, OrderRepository>()
+    .AddScoped<OrderService>()
     .AddDbContext<PostgresDbContext>(options =>
         options
             .UseNpgsql(builder.Configuration.GetConnectionString("PostgresConnection"))
